@@ -12,7 +12,7 @@ exports.initSocket = (server) => {
 
     socket.on('scoreUpdate', async (data) => {
       console.log(' scoreUpdate event received:', data);
-      const updatedPlayer = await updateScore(data);
+      await updateScore(data);
       const topPlayers = await getTopPlayers(data.region, data.gameMode, 10);
       io.emit('leaderboardUpdate', topPlayers);
     });
