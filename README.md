@@ -44,6 +44,11 @@ leaderBoard-backend/
 git clone https://github.com/MansiYadavv/leaderBoard-backend.git
 cd leaderBoard-backend
 
+## WebSocket Testing
+
+You can test the WebSocket connection using Postman or any WebSocket client with the following URL:
+ws://localhost:3000/socket.io/?EIO=4&transport=websocket
+
 # 2. Install dependencies
 npm install
 
